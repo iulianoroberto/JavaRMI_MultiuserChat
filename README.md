@@ -6,8 +6,8 @@ In the context of object-oriented programming, we can exploit the Observer behav
 
 To implement the multi-user chat application, the server must host a remote object that works as Subject of the Observer pattern. Clients should host remote objects working as Observer(s) of the same pattern. Use Java RMI to implement Subject and Observer.
 
-## Italiano
-Implementazione di una chat multi-utente come applicazione distribuita: il messaggio inviato da un cliente viene propagato a tutti gli altri client connessi al server. Al fine di implementare tale applicazione è stato sfruttato il design pattern observer (pattern comportamentale).
+## Spiegazione in italiano
+Implementazione di una chat multi-utente come applicazione distribuita: il messaggio inviato da un client viene propagato a tutti gli altri client connessi al server. Al fine di implementare tale applicazione è stato sfruttato il design pattern observer (pattern comportamentale).
 
 Il design pattern Observer prevede essenzialmente la presenza di due entità, che sono Subject e Observer. Il Subject è l'entità osservata di cui sono di interesse le modifiche di stato e l'Observer è l'entità che opera l'sservazione. Nel momento in cui un Observer decide di osservare un determinato Subject invoca il relativo metodo *attach()*. Quando un Subject è soggetto ad una modifica di stato vene invocato il metodo *notify()* (il metodo può essere invocato dal Subject stesso o da un'entità esterna). L'invocazione di *notify()* sul Subject prevede la corrispondente invocazione del metodo *update()* sull'Observer. Nell'implementazione "earlier" el pattern con *update()* viene comunicato all'Observer la modifca di stato, mentre nel'implemntazione "lazy" del pattern viene solo notificata la modifca di stato all'Observer, che poi si occuperà di recuperare la modifica (per questo implemntazione pigra-"lazy").
 
