@@ -21,5 +21,5 @@ Il codice di Stub (lato client) e Skeleton (lato server) è stato generato trami
 - Scarica i file con estensione .java e posizionali in una cartella.
 - Compila i file, a tal fine puoi sfruttare il compilatore javac ***javac \*.java*** (da console).
 - Se vuoi puoi rigenerare Stub e Skeleton sfruttando il tool rmic ***rmic -keep -v1.1 AbstractSubject*** (da console).
-- Avvia il server ***java ChatServer*** (nota che nel Server è previsto l'avvio del binder).
+- Avvia il server ***java ChatServer*** (nota che nel server è previsto l'avvio del binder).
 - Avvia il client ***java ChatClient***.
