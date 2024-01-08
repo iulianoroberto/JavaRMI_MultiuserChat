@@ -16,3 +16,10 @@ Il design pattern Observer prevede essenzialmente la presenza di due entità, ch
 Al fine di realizzare l'applicazione, la componente client ospita un oggetto remoto di tipo Subject, che viene registrato dal server sul binder. Ogni componente client ospita un oggetto remoto di tipo Observer, che viene passato al Subject tramite il metodo remoto *attach()*. Quando si verifica una modifica di stato sul Subject (messaggio inviato da un client) quella odifica viene comunicata a tutti gli Observer (il messaggio viene propagato).
 
 Il codice di Stub (lato client) e Skeleton (lato server) è stato generato tramite il tool rmic (nota che il tool rmic è deprecato e la generazione degli stub avviene sfruttando la reflection).
+
+### Come eseguirlo?
+- Scarica i file con estensione .java e posizionali in una cartella.
+- Compila i file, a tal fine puoi sfruttare il compilatore javac *javac *.java* (da console).
+- Se vuoi puoi rigenerare Stub e Skeleton sfruttando il tool rmic *rmic -keep -v1.1 AbstractSubject* (da console).
+- Avvia il server *java ChatServer* (nota che nel Server è previsto l'avvio del binder).
+- Avvia il client *java ChatClient*.
