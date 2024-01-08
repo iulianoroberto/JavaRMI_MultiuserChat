@@ -6,6 +6,8 @@ In the context of object-oriented programming, we can exploit the Observer behav
 
 To implement the multi-user chat application, the server must host a remote object that works as Subject of the Observer pattern. Clients should host remote objects working as Observer(s) of the same pattern. Use Java RMI to implement Subject and Observer.
 
+![alt text](https://github.com/iulianoroberto/Java_RMI_multiuser_chat/blob/main/Images/DPObserver.PNG)
+
 ## Spiegazione in italiano
 Implementazione di una chat multi-utente come applicazione distribuita: il messaggio inviato da un client viene propagato a tutti gli altri client connessi al server. Al fine di implementare tale applicazione è stato sfruttato il design pattern Observer (pattern comportamentale).
 
